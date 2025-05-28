@@ -1,0 +1,195 @@
+/* ====== General Styles ====== */
+body {                  /* basic typography and layout */
+  margin: 0; 
+  padding: 0; 
+  line-height: 2;  
+  letter-spacing: 1.5px; /* adding more white space between leters */
+  font-family: "Merriweather", serif;
+  color: #4a4a4a;
+  text-align: center;
+}
+/* Headings styles */
+h1 {                                            
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  color: #0C359E;
+  line-height: 1.2;
+  margin: 40px auto 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0C359E;
+  font-family: "Merriweather", serif;
+  padding-bottom: 20px;
+}
+
+h3 {
+  color: #28396d;
+  font-weight: normal;
+}
+
+hr {
+  border: dotted #8490bb 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+/* Link styles */
+a {
+  color: #662847;
+  text-decoration: none;
+  margin: 10px 20px;
+}
+
+a:hover {
+  color: #eaf6f6;   /* Change link color when mouse hovers over it */
+}
+/* Hero section with SVG and heading */
+.top-container {                                             /* gradient background and layout */
+  background: #e4aec8;
+  background-image: linear-gradient(to bottom,#e4aec8, #f0eaed);
+  position: relative;   /* enables absolute children to be positioned relative to this container */
+  padding-top: 20px;
+  height: 500px;
+
+}
+/* Middle section containing profile and skills */
+.middle-container {
+  padding-top: 100px 0;
+}
+/* About me section */
+.profile > img {
+  border-radius: 50%;
+}
+
+.profile {
+  padding-top: 100px;
+}
+/* Footer section */
+.bottom-container {
+  background-color: #3459b9;
+  background-image: linear-gradient(to top, #3459b9, #a7bcf0);
+  padding: 20px 0px 20px 0px;
+}
+
+.intro {
+  padding: auto; 
+}
+
+.message {
+  width: 70%;
+  margin: 40px auto 60px;
+}
+
+.copyright {
+  color: #F6F5F5;
+  font-family: 'Sacramento', cursive;
+  padding: 20px 0;
+}
+/* SVG icons in top section */
+.img-bottom {
+  display: flex;           /* layout SVGs in a row */
+  justify-content: center;  /* center the SVGs horizontally */
+  gap: 600px;                /* space between them */  /* Consider reducing for smaller screens */
+    
+}
+
+.laptop > img,
+.phone > img {
+  border-radius: 8px;
+  display: flex;
+    
+}
+
+.learning > h3,
+.creating > h3 
+{
+  padding: 0;
+  margin: 0;
+}
+/* Grid layout for skills section */
+.main {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr; /* two equal-width columns */        /* left: image, right: text */
+  grid-template-rows: 1fr 1fr;  /* adjust rows based on content */
+  width: 50%;
+  gap: 10px;
+  row-gap: 1.2rem;
+  text-align: left;
+  margin: 100px auto 0 auto;
+}
+
+.contact {
+  padding-bottom: 100px;
+}
+
+.btn {
+  background: #e4aec8;
+  background-image: linear-gradient(to bottom,#e4aec8, #f0eaed);
+  color:#0C359E;
+  border-radius: 8px;
+  margin: 10px 20px 30px 40px;
+  text-decoration: none;
+  padding: 20px 10px 20px 10px ;
+  font-size: 16px; 
+}
+
+.btn:hover {
+  background: #3d395f;
+  background-image: -webkit-linear-gradient(top, #3d395f, #4c4a5c);
+  background-image: -moz-linear-gradient(top, #3d395f, #4c4a5c);
+  background-image: -ms-linear-gradient(top,#3d395f, #4c4a5c);
+  background-image: -o-linear-gradient(top, #3d395f, #4c4a5c);
+  background-image: linear-gradient(to bottom,#3d395f, #4c4a5c);
+  text-decoration: none;
+}
+
+.skills > h2 {
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+  h3 {
+    font-size: 0.7rem;
+  }
+  .top-container {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .img-bottom {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    width: 80%;
+    
+  }
+   p {
+    font-size: 0.5rem;
+  }
+  
+  a {
+    font-size: 0.5rem;
+  }
+
+  .btn {
+    font-size: 0.5rem;
+  }
+  
+  .intro {
+    padding: 0 20px 0 20px;
+  }
+
+}
