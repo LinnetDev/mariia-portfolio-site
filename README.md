@@ -15,4 +15,4 @@ This project is my personal profile that showcases my design and development pro
 - Applying custom styles, fonts, and gradients
 - Organizing code into reusable and readable blocks
 
-🌐 Live Demo [Mariia Gorbachova]
+🌐 Live Demo [Mariia Gorbachova](https://linnetdev.github.io/mariia-portfolio-site/)
